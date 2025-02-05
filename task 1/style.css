@@ -1,0 +1,36 @@
+.parent, .child1, .child2{
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent{
+    margin: 100px auto;
+    transition-property: all;
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+}
+.parent:hover{
+    transform: rotateY(180deg);
+}
+
+.child1{
+    background-color: white;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.child2{
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: red;
+    transform: rotateY(180deg);
+}
+
+img{
+    width: 150px;
+}

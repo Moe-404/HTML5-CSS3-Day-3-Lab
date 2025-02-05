@@ -1,0 +1,48 @@
+.playGround{
+    display: flex;
+    margin-top: 15%;
+    height: auto;
+}
+
+img {
+    width: 60%;
+    height: 50%;
+}
+
+#g{
+    margin-top: 200px;
+}
+
+#p1, #p2{
+    width: 300px;
+}
+
+#ball{
+    width:100px;
+    height: 100px;
+    margin-top: 200px;
+    position: absolute;
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes ball {
+    0% {
+        left: 10%;
+        transform: rotate(0deg);
+    }
+    50% {
+        /* left: 10%; */
+        transform: rotate(0deg);
+    }
+    80%{
+        left: 80%;
+        transform: rotate(90deg)
+    }
+    100% {
+        left: 80%;
+        transform: rotate(180deg);
+    }
+}
